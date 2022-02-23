@@ -23,7 +23,8 @@ public class AnimReloadingScript : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.gameObject.GetComponent<PlayerController>().isReloading = false;
+        animator.gameObject.GetComponent<A_PlayerController>().isReloading = false;
+        //animator.gameObject.GetComponent<PlayerController>().isReloading = false;
         animator.SetBool(isReloading,false);
     }
 
