@@ -1264,6 +1264,87 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &248998924
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3576589643294418978, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_Name
+      value: AK47
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280728541186800458, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.damage
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.clipSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.weaponName
+      value: AK 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.weaponType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.bulletsInClip
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762288852664287163, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+      propertyPath: weaponStats.firingPattern
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
 --- !u!1 &345059840
 GameObject:
   m_ObjectHideFlags: 0
@@ -20072,8 +20153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponToSpawn: {fileID: 3576589643294418978, guid: 4f629c4027db524489064cb8c0ec4152, type: 3}
+  playerController: {fileID: 0}
   CrossHairImage: {fileID: 0}
   WeaponSocketLocation: {fileID: 1746348437}
+  gripIKSocketLocation: {fileID: 0}
 --- !u!1 &919132149538147128
 GameObject:
   m_ObjectHideFlags: 0
@@ -20207,9 +20290,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WeaponToSpawn: {fileID: 5372242115477984015, guid: 0e72e3849bd2ec04bb2dce0eaf462a47, type: 3}
   playerController: {fileID: 0}
+  Playeranimator: {fileID: 0}
   CrossHairImage: {fileID: 0}
+  equippedWeapon: {fileID: 0}
   WeaponSocketLocation: {fileID: 1079768952}
   gripIKSocketLocation: {fileID: 0}
+  firingPressed: 0
 --- !u!4 &954176531251843052
 Transform:
   m_ObjectHideFlags: 0

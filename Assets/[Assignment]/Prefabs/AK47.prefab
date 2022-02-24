@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8387236103046338119
 Transform:
   m_ObjectHideFlags: 0
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6280728541186800458}
-  - component: {fileID: 3077613749495933348}
+  - component: {fileID: 7762288852664287163}
   m_Layer: 0
   m_Name: AK47
   m_TagString: Untagged
@@ -407,23 +407,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3077613749495933348
+--- !u!114 &7762288852664287163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3576589643294418978}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437369e3b6a85af4e8bc6f726641d0df, type: 3}
+  m_Script: {fileID: 11500000, guid: 72717bf1b9e5969429d84d6630fe5d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gripLocation: {fileID: 8387236103046338119}
   weaponStats:
     weaponType: 2
     firingPattern: 1
-    weaponName: AK-47
+    weaponName: AK 47
     damage: 35
     bulletsInClip: 30
     clipSize: 30
@@ -434,10 +434,6 @@ MonoBehaviour:
     weaponHitLayers:
       serializedVersion: 2
       m_Bits: 4294967295
-    totalBullets: 500
-  firingEffect: {fileID: 7346348595693875683}
-  isFiring: 0
-  isReloading: 0
 --- !u!1 &5815558020649230057
 GameObject:
   m_ObjectHideFlags: 0

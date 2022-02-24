@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimReloadingScript : StateMachineBehaviour
+public class A_AnimReloadingScript : StateMachineBehaviour
 {
 
 
