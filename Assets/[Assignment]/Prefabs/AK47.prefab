@@ -434,6 +434,8 @@ MonoBehaviour:
     weaponHitLayers:
       serializedVersion: 2
       m_Bits: 4294967295
+  isFiring: 0
+  isReloading: 0
 --- !u!1 &5815558020649230057
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4277190922254703992
 Transform:
   m_ObjectHideFlags: 0
@@ -578,7 +580,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1862940681416619307
 Transform:
   m_ObjectHideFlags: 0
