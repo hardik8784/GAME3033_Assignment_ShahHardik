@@ -33,6 +33,7 @@ public class A_MovementComponent : MonoBehaviour
     public readonly int IsRunningHash = Animator.StringToHash("IsRunning");
     //public readonly int IsFiringHash = Animator.StringToHash("IsFiring");
     //public readonly int IsReloadingHash = Animator.StringToHash("IsReloading");
+    public GameObject UI;
 
     private void Awake()
     {
@@ -51,6 +52,12 @@ public class A_MovementComponent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            UI.SetActive(true);
+            Time.timeScale = 0;
+            //Debug.Log("P was pressed.");
+        }
         ////Camera X-Axis Rotation
         //FollowTransform.transform.rotation *= Quaternion.AngleAxis(LookInput.x * AimSensitivity /** Time.deltaTime*/, Vector3.up);
 

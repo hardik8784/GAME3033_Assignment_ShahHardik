@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneManager : MonoBehaviour
 {
+  
     public void GoToMain()
     {
         // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
@@ -21,5 +22,10 @@ public class SceneManager : MonoBehaviour
     {
         // Only specifying the sceneName or sceneBuildIndex will load the Scene with the Single mode
         UnityEngine.SceneManagement.SceneManager.LoadScene("Win");
+    }
+
+    public void GotoGame()
+    {
+        Time.timeScale = 1;
     }
 }
